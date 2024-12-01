@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pokédex</title>
+
+    <!--Icon-->
+    <link rel="icon" type="imagem/png" href="assets/img/pokebola.png">
+
+    <!-- Normalize CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css"
+        integrity="sha512-NhSC1YmyruXifcj/KFRWoC561YpHpc5Jtzgvbuzx5VozKpWvQ+4nXhPdFgmx8xqexRcpAglTj9sIBWINXa8x5w=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    
+    <!--Fonte-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;500;700&display=swap" rel="stylesheet">
+
+    <!-- Css -->
+    <link rel="stylesheet" href="assets/css/global.css">
+    <link rel="stylesheet" href="assets/css/pokedex.css">    
+    <link rel="stylesheet" href="assets/css/details.css">
+</head>
+<body>
+    <div id="pokeDetail">
+        <button id="closeBtn" onclick="closePopup()">
+            <img src="./assets/img/arrow.png" alt="Voltar">
+        </button>
+        <div id="top">
+            
+        </div>
+        <div id="data">
+            <nav>
+                <a data-id="about" class="focus">About</a>
+                <a data-id="baseStats">Base Stats</a>
+                <a data-id="evolution">Evolution</a>
+                <a data-id="moves">Moves</a>
+            </nav>
+            <div class="tabs active" id="about">
+                
+            </div>
+            <div class="tabs" id="baseStats">
+                                        
+            </div>
+            <div class="tabs" id="evolution">
+                  
+            </div>
+            <div  class="tabs" id="moves">
+                
+            </div>
+        </div>           
+    </div>
+    <script src="assets/js/pokemon_model.js" ></script>
+    <script src="assets/js/poke-api.js"></script>
+    <script src="assets/js/detail.js"></script>
+</body>
+</html>
